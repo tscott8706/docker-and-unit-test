@@ -1,3 +1,3 @@
 FROM python:3.6
 
-RUN pip install coverage flask mock nose nose-watch webargs
+RUN pip install coverage nose nose-watch
