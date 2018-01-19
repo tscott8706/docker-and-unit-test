@@ -1,0 +1,8 @@
+version: "2"
+services:
+    nosetests:
+        build: docker
+        volumes:
+            - ./:/usr/src/testdir
+        command: "bash -c 'cd /usr/src/testdir && nosetests'"
+        network_mode: bridge
